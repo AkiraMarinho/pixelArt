@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Art Piscando</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(15, 20px);
+    grid-template-rows: repeat(15, 20px);
+    gap: 2px;
+  }
+
+  .pixel {
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* cor do 0 */
+    transition: background-color 0.2s;
+  }
+
+  .black {
+    background-color: #000; /* cor do 1 */
+  }
+
+  /* animação para o olho esquerdo piscando (linha 2, coluna 4) */
+  @keyframes blink {
+    0%, 90%, 100% { background-color: #000; }
+    45%, 55% { background-color: #fff; }
+  }
+
+  .black {
+    animation: blink 1.5s infinite;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <!-- grid em pixels -->
+  <!-- linha 1 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+  <!-- linha 2 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+  <!-- linha 3 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div>
+  <!-- linha 4 -->
+  <div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div>
+  <!-- linha 5 -->
+  <div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div>
+  <!-- linha 6 -->
+  <div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div>
+  <!-- linha 7 -->
+  <div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div>
+  <!-- linha 8 -->
+  <div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div>
+  <!-- linha 9 -->
+  <div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div>
+  <!-- linha 10 -->
+  <div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div>
+  <!-- linha 11 -->
+  <div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div>
+  <!-- linha 12 -->
+  <div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div>
+  <!-- linha 13 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div>
+  <!-- linha 14 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+  <!-- linha 15 -->
+  <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel black"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
+</div>
+
+</body>
+</html>
